@@ -15,7 +15,7 @@ public class GmailClient {
     public void findEmailBySubject(String subject) throws MessagingException, IOException {
         try {
             Properties props = new Properties();
-            props.load(new FileInputStream(new File("C:\\Users\\p0028867\\IdeaProjects\\GmailApi\\src\\main\\resources\\smtp.properties")));
+            props.load(new FileInputStream(new File("\\src\\main\\resources\\smtp.properties")));
 
             Session session = Session.getDefaultInstance(props, null);
 
